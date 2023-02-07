@@ -1,0 +1,11 @@
+{
+    "name": "HQS build and deploy for rust pyo3 repos",
+    "description": "Publish rust packages on crates.io. Build source and pre-compiled Python wheels and upload to PyPi",
+    "categories": [
+        "Rust",
+        "Python"
+    ],
+    "filePatterns": [
+        "Cargo.toml"
+    ]
+}

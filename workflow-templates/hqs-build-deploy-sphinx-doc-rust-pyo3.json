@@ -1,0 +1,11 @@
+{
+    "name": "HQS build Sphinx docs for rust pyo3 repos",
+    "description": "Build the Sphinx based API docs for rust repos with a PyO3 Python interface. Publish docs on github pages.",
+    "categories": [
+        "Rust",
+        "Python"
+    ],
+    "filePatterns": [
+        "Cargo.toml"
+    ]
+}
