@@ -12,6 +12,11 @@ on:
         required: false
         default: false
         type: boolean
+      build_for_arm:
+        description: "Determines python wheels are also build for aarch64"
+        required: false
+        default: false
+        type: boolean
   workflow_call:
     inputs:
       py_interface_folder:
@@ -20,6 +25,11 @@ on:
         type: string
       deploy:
         description: "Determines if build python wheels should be deployed to PyPi"
+        required: false
+        default: false
+        type: boolean
+      build_for_arm:
+        description: "Determines python wheels are also build for aarch64"
         required: false
         default: false
         type: boolean
@@ -55,6 +65,7 @@ jobs:
 
   build_maturin_builds_linux_arm:
     name: maturin_build-linux
+    if: ${{inputs.build_for_arm}}
     runs-on: 'ubuntu-latest'
     steps:
       - uses: actions/checkout@v3

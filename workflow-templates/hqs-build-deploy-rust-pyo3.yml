@@ -38,6 +38,8 @@ jobs:
     with: 
       py_interface_folder: "qoqo_calculator_pyo3"
       deploy: true
+      # Whether to build for aarch64. Can fail if there are C/C++ dependencies
+      build_for_arm: false
     secrets: inherit
 
 # Build macos wheels and upload them to PyPi
