@@ -1,0 +1,11 @@
+{
+    "name": "HQS CI tests for rust pyo3 repos",
+    "description": "Run unittests, linting and test installation for Rust repos with PyO3 based Python interfaces.",
+    "categories": [
+        "Rust",
+        "Python"
+    ],
+    "filePatterns": [
+        "Cargo.toml"
+    ]
+}
