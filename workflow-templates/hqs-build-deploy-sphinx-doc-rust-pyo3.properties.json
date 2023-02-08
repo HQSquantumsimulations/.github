@@ -4,8 +4,5 @@
     "categories": [
         "Rust",
         "Python"
-    ],
-    "filePatterns": [
-        "Cargo.toml"
     ]
 }
