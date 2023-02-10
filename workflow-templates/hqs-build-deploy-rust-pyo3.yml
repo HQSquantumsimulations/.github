@@ -49,6 +49,8 @@ jobs:
     uses: HQSquantumsimulations/reusable_workflows/.github/workflows/reusable_build_maturin_macos.yml@main
     with: 
       py_interface_folder: "qoqo_calculator_pyo3"
+      # Try to build python wheels with universal2 for arm and x86
+      universal2: true
       deploy: true
     secrets: inherit
 
