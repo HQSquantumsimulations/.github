@@ -36,7 +36,7 @@ jobs:
     needs: deploy_cratesio
     uses: HQSquantumsimulations/reusable_workflows/.github/workflows/reusable_build_maturin_linux.yml@main
     with: 
-      py_interface_folder: "qoqo_calculator_pyo3"
+      py_interface_folder: "PATH_TO_PYINTERFACE_FOLDER"
       deploy: true
       # Whether to build for aarch64. Can fail if there are C/C++ dependencies
       build_for_arm: false
@@ -48,7 +48,7 @@ jobs:
     needs: deploy_cratesio
     uses: HQSquantumsimulations/reusable_workflows/.github/workflows/reusable_build_maturin_macos.yml@main
     with: 
-      py_interface_folder: "qoqo_calculator_pyo3"
+      py_interface_folder: "PATH_TO_PYINTERFACE_FOLDER"
       # Try to build python wheels with universal2 for arm and x86
       universal2: true
       deploy: true
@@ -60,6 +60,6 @@ jobs:
     needs: deploy_cratesio
     uses: HQSquantumsimulations/reusable_workflows/.github/workflows/reusable_build_maturin_windows.yml@main
     with: 
-      py_interface_folder: "qoqo_calculator_pyo3"
+      py_interface_folder: "PATH_TO_PYINTERFACE_FOLDER"
       deploy: true
     secrets: inherit
