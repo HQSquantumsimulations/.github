@@ -1,0 +1,7 @@
+{
+    "name": "HQS CI tests for pure python repos/folders",
+    "description": "Run unittests, linting and test installation for repos with pure python components.",
+    "categories": [
+        "Python"
+    ]
+}
