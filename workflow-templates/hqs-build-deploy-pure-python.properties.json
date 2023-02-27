@@ -1,0 +1,7 @@
+{
+    "name": "HQS build and deploy for pure python folders/repos",
+    "description": "Publish python packages on PyPi",
+    "categories": [
+        "Python"
+    ]
+}
