@@ -1,0 +1,7 @@
+{
+    "name": "HQS build Sphinx docs for pure python repos",
+    "description": "Build the Sphinx based API docs for pure python repos. Publish docs on github pages.",
+    "categories": [
+        "Python"
+    ]
+}
