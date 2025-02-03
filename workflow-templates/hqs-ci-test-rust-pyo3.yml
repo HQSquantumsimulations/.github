@@ -13,21 +13,20 @@ jobs:
     uses: HQSquantumsimulations/reusable_workflows/.github/workflows/reusable_unittests_rust_pyo3.yml@main
     with:
       # Run tests also on windows runners
-      windows: false
+      windows: true
       # Run tests also on macos runners
       macos: true
       # Test code coverage of rust core is over 90 percent
       test_code_coverage: true
       rust_package_name: "NAME_OF_RUST_PACKAGE_WITHOUT_PYTHON_INTERFACE"
-      python_3_12: true
+      features: "LIST_OF_FEATURES_TO_TEST_SEPARATED_BY_WHITESPACES"
 
   build_tests:
     uses: HQSquantumsimulations/reusable_workflows/.github/workflows/reusable_build_tests_rust_pyo3.yml@main
     with: 
       # Run tests also on windows runners
-      windows: false
+      windows: true
       # Run tests also on macos runners
       macos: true
       py_interface_folder: "NAME_OF_RUST_PACKAGE_WITH_PYTHON_INTERFACE"
       has_python_tests: true
-      python_3_12: true
